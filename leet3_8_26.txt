@@ -1,0 +1,52 @@
+Given an array nums of integers, return how many of them contain an even number of digits.
+
+ 
+
+Example 1:
+
+Input: nums = [12,345,2,6,7896]
+Output: 2
+Explanation: 
+12 contains 2 digits (even number of digits). 
+345 contains 3 digits (odd number of digits). 
+2 contains 1 digit (odd number of digits). 
+6 contains 1 digit (odd number of digits). 
+7896 contains 4 digits (even number of digits). 
+Therefore only 12 and 7896 contain an even number of digits.
+
+
+check leetcode submission on 3/08/26
+
+ Explanation (String Approach)
+
+This approach checks whether each number in the array has an even number of digits by converting it into a string.
+
+Steps:
+Initialize a variable count to store the number of integers with an even number of digits.
+Traverse through each element of the array.
+Convert the current integer into a string using Integer.toString().
+Find the length of the string using the length() method. The length of the string represents the number of digits in the integer.
+If the length is even (length % 2 == 0), increment the count.
+After traversing the entire array, return the value of count.
+Example
+
+Input:
+
+nums = [12, 345, 2, 6, 7896]
+
+Processing:
+
+12 → "12" → length = 2 (even) ✅
+345 → "345" → length = 3 (odd) ❌
+2 → "2" → length = 1 (odd) ❌
+6 → "6" → length = 1 (odd) ❌
+7896 → "7896" → length = 4 (even) ✅
+
+Output:
+
+2
+Complexity Analysis
+Time Complexity: O(n × d), where n is the number of elements and d is the number of digits in each number (string conversion takes time proportional to the number of digits). Since the number of digits is small, this is effectively O(n).
+Space Complexity: O(d) for the temporary string created for each number.
+
+This solution is simple, readable, and easy to understand, making it a good choice for beginners.
