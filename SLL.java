@@ -132,3 +132,16 @@ public void deleteALL(){
     size=0;
 }
 }
+// Inside main 
+
+
+    //  SLL sll=new SLL();
+    //     sll.createSll(5);
+    //     sll.insertion(10,1);
+    //     sll.insertion(15,3);
+    //     sll.traversal();
+    //     sll.deletion(3);
+
+    //      sll.traversal();
+        // sll.searchNode(5);
+        // sll.deletion(3);
